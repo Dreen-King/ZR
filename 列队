@@ -1,0 +1,33 @@
+def guibing(list1):
+    n = len(list1)
+    print(list1)
+    if n == 1:
+        return list1
+    half = n // 2
+    left_res = guibing(list1[:half])
+    right_res = guibing(list1[half:])
+    return mergersort(left_res, right_res)
+def mergersort(a, b):
+    c = []
+    llen = len(a)
+    rlen = len(b)
+    h = 0
+    j = 0
+    while j < llen and h < rlen:
+        if a[j] < b[h]:
+            c.append(a[j])
+            j += 1
+        else:
+            c.append(b[h])
+            h += 1
+    if j == len(a):  # 这里不能简单比较a、b长度
+        for i in b[h:]:
+            c.append(i)
+    else:
+        for i in a[j:]:
+            c.append(i)
+    return c
+if __name__ == '__main__':
+    list1 = [7, 9, 3, 4, 5, 8]
+    print(guibing(list1))
+    # print (list1)
