@@ -1,15 +1,14 @@
 hello
-$?ssh-keygen?-t?rsa?-C?"a1574129438z@qq.com"? 
-ºóÃæµÄ¸ÄÎªÄãµÄÓÊÏä£¬Ö®ºó»áÒªÇóÈ·ÈÏÂ·¾¶ºÍÊäÈëÃÜÂë£¬ÎÒÃÇÕâÊ¹ÓÃÄ¬ÈÏµÄÒ»Â·»Ø³µ¾ÍĞĞ¡£
-³É¹¦µÄ»°»áÔÚ~/ÏÂÉú³É.sshÎÄ¼ş¼Ğ£¬½øÈ¥£¬´ò¿ªid_rsa.pub£¬¸´ÖÆÀïÃæµÄkey¡£
-»Øµ½github£¬½øÈëAccount?Settings£¬×ó±ßÑ¡ÔñSSH?Keys£¬Add?SSH?Key,titleËæ±ãÌî£¬Õ³Ìùkey¡£
-$?git?config?--global?user.name?"Dreen-King"? 
-$?git?config?--global?user.email?"a1574129438z@qq.com"?
+$ ssh-keygen -t rsa -C "a1574129438z@qq.com"
+åé¢çš„æ”¹ä¸ºä½ çš„é‚®ç®±ï¼Œä¹‹åä¼šè¦æ±‚ç¡®è®¤è·¯å¾„å’Œè¾“å…¥å¯†ç ï¼Œæˆ‘ä»¬è¿™ä½¿ç”¨é»˜è®¤çš„ä¸€è·¯å›è½¦å°±è¡Œã€‚
+æˆåŠŸçš„è¯ä¼šåœ¨~/ä¸‹ç”Ÿæˆ.sshæ–‡ä»¶å¤¹ï¼Œè¿›å»ï¼Œæ‰“å¼€id_rsa.pubï¼Œå¤åˆ¶é‡Œé¢çš„keyã€‚
+å›åˆ°githubï¼Œè¿›å…¥Account?Settingsï¼Œå·¦è¾¹é€‰æ‹©SSH Keysï¼ŒAdd?SSH Key,titleéšä¾¿å¡«ï¼Œç²˜è´´keyã€‚
+$ git config --global user.name "Dreen-King"
+$ git config --global user.email "a1574129438z@qq.com"
 $ git remote add origin https://github.com/Dreen-King/ZR.git
-$ git add * //Ìí¼ÓÎÄ¼ş¼ĞÏÂµÄËùÓĞ
-$ git?push?origin?master?
-git?pushÃüÁî»á½«±¾µØ²Ö¿âÍÆËÍµ½Ô¶³Ì·şÎñÆ÷¡£?
-git?pullÃüÁîÔòÏà·´¡£
-git commit -m "first commit" //²»µ½¸Â¹ş
-
+$ git add * //æ·»åŠ æ–‡ä»¶å¤¹ä¸‹çš„æ‰€æœ‰
+$ git push origin master
+git pushå‘½ä»¤ä¼šå°†æœ¬åœ°ä»“åº“æ¨é€åˆ°è¿œç¨‹æœåŠ¡å™¨ã€‚
+git pullå‘½ä»¤åˆ™ç›¸åã€‚
+git commit -m "first commit" //ä¸åˆ°å˜å“ˆ
 git push -u origin master
