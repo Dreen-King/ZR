@@ -1,1 +1,15 @@
 hello
+$?ssh-keygen?-t?rsa?-C?"a1574129438z@qq.com"? 
+后面的改为你的邮箱，之后会要求确认路径和输入密码，我们这使用默认的一路回车就行。
+成功的话会在~/下生成.ssh文件夹，进去，打开id_rsa.pub，复制里面的key。
+回到github，进入Account?Settings，左边选择SSH?Keys，Add?SSH?Key,title随便填，粘贴key。
+$?git?config?--global?user.name?"Dreen-King"? 
+$?git?config?--global?user.email?"a1574129438z@qq.com"?
+$ git remote add origin https://github.com/Dreen-King/ZR.git
+$ git add * //添加文件夹下的所有
+$ git?push?origin?master?
+git?push命令会将本地仓库推送到远程服务器。?
+git?pull命令则相反。
+git commit -m "first commit" //不到嘎哈
+
+git push -u origin master
